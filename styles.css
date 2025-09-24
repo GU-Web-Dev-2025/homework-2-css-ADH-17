@@ -1,0 +1,101 @@
+.header{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 10px;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex: 1; 
+    justify-content: center;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-pic{
+    width: 200px;
+    border-radius: 10px;
+    margin: 5px;
+    flex: 1;
+}
+
+.main-content{
+    flex: 3;
+    margin: 5px;
+    padding: 10px;
+}
+
+.profile{
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    flex: 1;
+}
+
+h2{
+        margin-left: 5%
+    }
+
+.skills{
+
+
+    ul{
+        list-style-type: square;
+        padding-left: 20px;
+        margin-left: 5%;
+    }
+}
+
+.career{
+    margin: 2.5%;
+    padding: 10px;
+}
+
+.edcuation{
+    margin: 2.5%;
+
+}
+
+.interest{
+    margin: 2.5%;
+    padding: 10px;
+}
+
+.hobby-img{
+    width: 150px;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 1;
+    justify-content: center;
+}
+
+table{
+    width: 90%;
+    margin-left: 5%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 8px; 
+    text-align: center;
+    }
+
+th{
+    background-color: #74c8f8
+}
+
+tr:nth-child(even) {
+        background-color: #74c8f8;
+}
+
+tr:nth-child(odd) {
+        background-color: grey;
+}

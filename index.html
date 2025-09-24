@@ -1,84 +1,121 @@
 <!DOCTYPE html>
-<!-- Ayden Humphries Web Development HW1 9/2/25-->
+<!--
+Ayden Humphries
+CPSC 332 Web Development
+HW2 – CSS
+Last modified: 9/24/2025
+-->
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ayden Humphries CV </title>
-        <link rel="icon" type="images/favicon" href="images/Ballin.jpg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayden Humphries CV</title>
+  <link rel="icon" type="image/png" href="images/Ballin.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    </head>
-    <body>
+  <!-- HEADER / NAVIGATION -->
+  <header class="header">
+    <h1>Ayden Humphries</h1>
+    <h3>Computer Science Student at Gonzaga University</h3>
+    <nav class="nav">
+        <p><a href="#intro">Introduction</a></p>
+        <p><a href="#career">Career Summary</a></p>
+        <p><a href="#education">Education</a></p>
+        <p><a href="#interests">Interests</a></p>
 
-        <h1>Introduction</h1>
-        <p> Ayden Humphries was born in Dallas, Texas and was raised there until he was 10 years old. From there he moved to a small
-            town called Sequim in Washington state. Here he would go on to become president of his High Schools service club, leading
-            a movement to house homeless youth in his area. It was here he created a Tik-Tok that caught the attention
-            of George Clooney. He spoke in front of Seattle 4 Rotary, the 4th International Rotary Club to be established, and he managed
-            to raise several thousands of dollars for the Joe Rantz Rotary Youth House. 
-            Ayden has 8 siblings and as the oldest is no stranger to rangling chaos. He is currently developing an application to help users
-            fight porn addictions and hopes to be able to offer that service free to anyone who is struggling. As he believes
-            no one should have to pay for tools to help improve their lives. 
-        </p>
-        <img src="images/IMG_9365.jpg" alt="Self" width="200" height="240">
-        <hr>
-        <h2> Skills</h2>
-        <ul>C</ul> 
-        <ul>Linux and Unix Systems</ul> 
-        <ul>C++</ul>
-        <ul>Python</ul> 
+    </nav>
+  </header>
 
-        <br>
+  <!-- MAIN FLEX LAYOUT -->
+  <div class="flex-container">
+
+    <!-- LEFT PANEL (Profile/Intro) -->
+    <aside class="profile" id="intro">
+      <img src="images/IMG_9365.jpg" alt="Ayden Humphries" class="profile-pic">
+      <h2> Introduction </h2>
+      <p>Computer Science student passionate about ethics, technology, and building impactful tools. Experienced in leadership, community service, and project development.</p>
+    </aside>
+
+    <!-- RIGHT PANEL (Main Content) -->
+    <main class="main-content">
+
+      <!-- Skills -->
+      <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>C</li>
+          <li>Linux / Unix Systems</li>
+          <li>C++</li>
+          <li>Python</li>
+        </ul>
+      </section>
+
+      <!-- Career -->
+      <section class="career" id="career">
         <h2>Career Summary</h2>
         <table>
-            <tr> 
-                <th> Job</th>
-                <th> Time Working</th>
+          <thead>
+            <tr>
+              <th>Job</th>
+              <th>Time Working</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Concessions Stand</td>
+              <td>2023–2025</td>
             </tr>
             <tr>
-                <td style="text-align:center;"> Roof Salesman</td>
-                <td style="text-align:center;"> Summer 2025</td>
+              <td>Construction</td>
+              <td>2024–2025</td>
             </tr>
             <tr>
-                <td style="text-align:center;"> Construction</td>
-                <td style="text-align:center;"> 2024-2025</td>
+              <td>Roof Salesman </td>
+              <td>Summer 2025 </td>
             </tr>
-            <tr>
-                <td style="text-align:center;"> Concessions Stand </td>
-                <td style="text-align:center;"> 2023-2025</td>
-            </tr>
+          </tbody>
         </table>
-        <br>
-            <h2> Education and Qualifications</h2>
-            <table>
-                <tr>
-                <th>Education</th>
-                <th>Grad Year</th>
-                </tr>
+      </section>
 
-                <tr>
-                    <td style="text-align:center;">Bachelor Of Computer Science</td>
-                    <td style="text-align:center;">2027 (expected)</td>
-                </tr>
-                <tr>
-                    <td style="text-align:center;">High School Diploma</td>
-                    <td style="text-align:center;">2023</td>
-                </tr>
-            </table>
-            <br>
-            <h2> Interests and Hobbies</h2>
-            <ol> 
-            <li> Building Computers </li>
-            <li> Films</li>
-            <li> Ethics and Philosophy </li>
-            </ol>
-            <br>
-            <p> <a href="https://www.newegg.com/?srsltid=AfmBOoqDayanUvrW2_08sXWmu39GfSwz2wzSWh-yc77kOIbW1Sbz7leK">
-            <img src="images/Computer.jpg" alt="Computer" width="200" height="240">
-            </a>
-            </p>
-            <p> Computer Ayden Humphries has built, link to computer parts website</p>
-            <br>
-\
-    </body>
+      <!-- Education -->
+      <section class="education" id="education">
+        <h2>Education and Qualifications</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Education</th>
+              <th>Grad Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bachelor of Computer Science</td>
+              <td>2027 (expected)</td>
+            </tr>
+            <tr>
+              <td>High School Diploma</td>
+              <td>2023</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Interests -->
+      <section class="interests" id="interests">
+        <h2>Interests and Hobbies</h2>
+        <ol>
+          <li>Building Computers</li>
+          <li>Films</li>
+          <li>Ethics and Philosophy</li>
+        </ol>
+        <a href="https://www.newegg.com">
+          <img src="images/Computer.jpg" alt="Custom Built Computer" class="hobby-img">
+        </a>
+      </section>
+
+    </main>
+  </div>
+</body>
 </html>
